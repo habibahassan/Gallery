@@ -17,8 +17,20 @@ As a user I can:
 * View photos based on the location they were taken.
 
 ## Specifications
-| Behaviour |	Input |	Output
-| Display Landing page |	On page load |	Site description and gallery pictures
-| Display picture information |	Click info icon on picture |	Opens a modal that shows a large version of the picture and its details
-| Display different picture categories |	Enter search term on the search bar |	Display search results if search term meets database categories
-| Display pictures from different categories |	Click 'Location/Globe' Icon on the navigation bar |	Displays a select field that allows users to search for pictures from a specific country/location
+Behaviour		
+* Display Landing page		
+* Display picture information		
+* Display different picture categories		
+* Display pictures from different categories
+		
+Input
+* On page load
+* Click info icon on picture
+* Enter search term on the search bar
+* Click 'Location/Globe' Icon on the navigation bar
+
+Output
+* Site description and gallery pictures
+* Opens a modal that shows a large version of the picture and its details
+* Display search results if search term meets database categories
+* Displays a select field that allows users to search for pictures from a specific country/location
