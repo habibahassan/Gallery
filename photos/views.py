@@ -5,8 +5,12 @@ from .models import Image,Location
 
 
 def homePageView(request):
+    
+    return render(request,'home.html')
+
+def images(request):
     location = Location.objects.all()
     images=Image.objects.all()
-    
-    return render(request,'home.html',{"images":images, "location": location})
+    return render(request,'images.html',{"images":images, "location": location})
+
 

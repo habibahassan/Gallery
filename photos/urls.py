@@ -8,6 +8,8 @@ from django.conf.urls.static import static
 urlpatterns = [
 path('', homePageView, name='home'),
 path('home.html',homePageView,name = 'home'),
+path('images.html',homePageView,name = 'image'),
+
 ]
 
 if settings.DEBUG:
