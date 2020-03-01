@@ -1,5 +1,12 @@
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
+import datetime as dt
+from django.http  import HttpResponse,Http404
+from .models import Image,Location
+
 
 def homePageView(request):
-  return render(request, 'home.html')
+    location = Location.objects.all()
+    images=Image.objects.all()
+    
+    return render(request,'home.html',{"images":images, "location": location})
+
