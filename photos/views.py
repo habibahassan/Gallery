@@ -27,3 +27,4 @@ def searchbylocation(request, location):
     print(images)
     title = f'{location} Photos'
     return render(request, 'location.html', {'title': title, 'images': images, 'locations': locations})
+
