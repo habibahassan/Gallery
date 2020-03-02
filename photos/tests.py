@@ -32,4 +32,3 @@ class CategoryTestClass(TestCase):
         categories = Category.objects.all()
         self.assertTrue(len(categories)>0)
 
-        
