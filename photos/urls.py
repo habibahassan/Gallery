@@ -7,8 +7,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 path('', views.homePage, name='home'),
-path('',views.searchbycategory, name='searchbycategory'),
-path('', views.searchbylocation, name='location_filter'),
+path('search/',views.searchbycategory, name='searchbycategory'),
+path('location/<int:location>', views.searchbylocation, name='location_filter'),
 
 ]
 

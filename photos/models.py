@@ -26,7 +26,7 @@ class Category(models.Model):
 class Image(models.Model):
     image_name = models.CharField(max_length =60)
     image_description = models.CharField(max_length =255)
-    category = models.ManyToManyField(Category)
+    category = models.ForeignKey('Category',on_delete=models.CASCADE,null=True)
     location = models.ForeignKey('Location', on_delete=models.CASCADE,)
     pub_date = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to='images/',default='DEFAULT VALUE')
@@ -64,5 +64,5 @@ class Image(models.Model):
     
     @classmethod
     def search_by_category(cls,search_term):
-        image = Image.objects.filter(category__icontains=search_term).all()
+        image = Image.objects.filter(category__category=search_term).all()
         return image

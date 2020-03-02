@@ -12,9 +12,7 @@ def homePage(request):
 def searchbycategory(request):
     if 'image' in request.GET and request.GET["image"]:
         search_term = request.GET.get("image")
-        print(search_term)
         found_images = Image.search_by_category(search_term)
-        print(found_images)
         message = f"{search_term}"
         return render(request,'search.html',{"message":message,"images":found_images})
     else:
