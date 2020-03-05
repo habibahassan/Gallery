@@ -41,7 +41,7 @@ class ImageTestClass(TestCase):
         self.location = Location(location="Nairobi")
         self.location.save_location()
 
-        self.image = Image(id=1,image_name="TopBar",image_description="This is the top of the world",category=self.test_category,location=self.location,)
+        self.image = Image(id=1,image_name="Giraffe",image_description="This is it",category=self.test_category,location=self.location,)
         self.image.save_image()
 
     def tearDown(self):

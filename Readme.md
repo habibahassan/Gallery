@@ -4,6 +4,9 @@ A personal gallery application used to display images from different locations a
 ## Author
 Habiba Hassan
 
+## Code Beat
+[![codebeat badge](https://codebeat.co/badges/3130f004-6ba6-43ff-a288-9335b17a254e)](https://codebeat.co/projects/github-com-habibahassan-gallery-master)
+
 ## User stories
 These are the behaviours/features that the application implements for use by a user.
 
